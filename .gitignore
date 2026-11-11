@@ -1,0 +1,49 @@
+# 本地数据、真实班级库与密钥
+data/
+deploy/bot.env.json
+*.secret
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# 临时与备份
+.tmp/
+.tmp-*/
+备份/
+in
+*.log
+*.tmp
+.dsh-office-*/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Android / Gradle
+native/android/.gradle/
+native/android/.idea/
+native/android/local.properties
+native/android/build/
+native/android/app/build/
+native/android/captures/
+
+# Electron / Node
+native/desktop/node_modules/
+native/desktop/dist/
+release/win-unpacked/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# 测试与覆盖率
+.coverage
+htmlcov/
+
+# 原生安装包通过 GitHub Releases 分发，不进入 Git
+release/*.apk
+release/*.exe
+release/*.blockmap

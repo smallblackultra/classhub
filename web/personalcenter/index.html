@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4b151d">
+  <meta name="description" content="微电子学院 · 集成电路设计与集成系统26-1班个人中心：账号、头像、个人待办与班级工具入口。">
+  <title>个人中心 · 微电子学院班级门户</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="application-name" content="班级门户">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="班级门户">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" href="/assets/home/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/assets/personalcenter.css?v=20261111f">
+</head>
+<body class="pc-body">
+  <a class="pc-skip" href="#pc-main">跳到主要内容</a>
+
+  <header class="pc-header">
+    <div class="pc-header-inner">
+      <a class="pc-brand" href="/" aria-label="返回班级门户首页">
+        <img src="/assets/home/logo.png" alt="合肥工业大学微电子学院院徽">
+        <span>
+          <b>微电子学院</b>
+          <small>集成电路设计与集成系统26-1班</small>
+        </span>
+      </a>
+      <nav class="pc-nav" aria-label="主导航">
+        <a href="/">首页</a>
+        <a href="/daliy/">DDL 查询</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="pc-main" tabindex="-1">
+    <section class="pc-hero">
+      <div class="pc-hero-inner">
+        <div>
+          <p class="pc-eyebrow">PERSONAL CENTER</p>
+          <h1>个人中心</h1>
+          <p class="pc-lead">一个账号，连接班级门户、DDL 查询和个人待办。</p>
+        </div>
+        <div class="pc-hero-mark" aria-hidden="true">
+          <span>厚德</span><span>笃行</span><span>崇实</span><span>尚新</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="pc-shell">
+      <p class="pc-loading" id="pc-loading">正在读取账号状态…</p>
+
+      <section class="pc-guest" id="pc-guest" hidden aria-labelledby="pc-login-title">
+        <div class="pc-login-card">
+          <p class="pc-kicker">SIGN IN</p>
+          <h2 id="pc-login-title">登录个人中心</h2>
+          <p class="pc-sub">使用班级截止日的学号和密码，登录后会停留在本页。</p>
+          <form id="pc-login-form" novalidate>
+            <label class="pc-field">
+              <span>学号</span>
+              <input id="pc-student" name="student_no" autocomplete="username" inputmode="text" maxlength="20" placeholder="请输入学号" required>
+            </label>
+            <label class="pc-field">
+              <span>密码</span>
+              <input id="pc-password" name="password" type="password" autocomplete="current-password" maxlength="64" placeholder="请输入密码" required>
+            </label>
+            <p class="pc-error" id="pc-login-error" role="alert" hidden></p>
+            <button class="pc-btn pc-btn-primary pc-btn-block" id="pc-login-submit" type="submit">登录</button>
+          </form>
+          <p class="pc-hint">账号由班委创建；忘记密码或尚未注册，请联系班长或团支书。</p>
+        </div>
+        <aside class="pc-side-note">
+          <p class="pc-kicker">WHAT CHANGED</p>
+          <h2>两个“我的”合并了</h2>
+          <p>这里集中展示门户与 DDL 共用的账号信息、头像、个人待办和班级工具。DDL 里的「个人中心」会直接打开这个页面。</p>
+          <a class="pc-text-link" href="/daliy/">先去看看 DDL 查询 <span aria-hidden="true">→</span></a>
+        </aside>
+      </section>
+
+      <section id="pc-account" hidden aria-label="账号与个人中心">
+        <div class="pc-notice" id="pc-pending-notice" hidden>
+          <b>账号待审批</b>
+          <span>班委通过后即可使用班级功能；你仍然可以在这里查看账号状态。</span>
+        </div>
+        <div class="pc-notice pc-notice-warn" id="pc-password-notice" hidden>
+          <b>需要先修改初始密码</b>
+          <span>请在本页下方设置新密码，完成后即可继续使用全部功能。</span>
+        </div>
+
+        <section class="pc-profile">
+          <div class="pc-avatar-wrap">
+            <button class="pc-avatar-button" id="pc-avatar-button" type="button" title="更换头像" aria-label="更换头像">
+              <span class="pc-avatar" id="pc-avatar" aria-hidden="true">同</span>
+            </button>
+            <input id="pc-avatar-file" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+            <span class="pc-avatar-tip">点击头像更换</span>
+          </div>
+          <div class="pc-profile-main">
+            <div class="pc-name-row">
+              <h2 id="pc-name">同学</h2>
+              <span class="pc-role" id="pc-role">班级成员</span>
+            </div>
+            <p class="pc-meta" id="pc-meta">—</p>
+            <p class="pc-status" id="pc-status">—</p>
+            <p class="pc-error" id="pc-avatar-error" role="alert" hidden></p>
+          </div>
+          <div class="pc-profile-actions">
+            <button class="pc-btn pc-btn-ghost" id="pc-logout" type="button">退出登录</button>
+          </div>
+        </section>
+
+        <div class="pc-columns">
+          <section class="pc-card pc-todo" aria-labelledby="pc-todo-title">
+            <div class="pc-card-head">
+              <div>
+                <p class="pc-kicker">MY LIST</p>
+                <h2 id="pc-todo-title">我的个人待办</h2>
+              </div>
+              <span class="pc-count" id="pc-todo-count">0 项未完成</span>
+            </div>
+            <p class="pc-sub">只属于你自己，不参与班级截止日统计，同学看不到。</p>
+            <form class="pc-todo-form" id="pc-todo-form">
+              <input id="pc-todo-title-input" maxlength="120" placeholder="写下一件要做的事" aria-label="待办内容" required>
+              <div class="pc-date-field">
+                <input id="pc-todo-due" type="datetime-local" aria-label="截止时间（可选）">
+                <span class="pc-date-placeholder" aria-hidden="true">年/月/日</span>
+              </div>
+              <button class="pc-btn pc-btn-primary" type="submit">添加</button>
+            </form>
+            <p class="pc-error" id="pc-todo-error" role="alert" hidden></p>
+            <ul class="pc-todo-list" id="pc-todo-list"></ul>
+          </section>
+
+          <aside class="pc-side">
+            <section class="pc-card">
+              <div class="pc-card-head">
+                <div>
+                  <p class="pc-kicker">ACCOUNT</p>
+                  <h2>账号信息</h2>
+                </div>
+              </div>
+              <dl class="pc-info">
+                <div><dt>学号</dt><dd id="pc-student-no">—</dd></div>
+                <div><dt>班级</dt><dd id="pc-class">—</dd></div>
+                <div><dt>学院</dt><dd id="pc-college">—</dd></div>
+                <div><dt>专业</dt><dd id="pc-major">—</dd></div>
+                <div><dt>年级</dt><dd id="pc-grade">—</dd></div>
+              </dl>
+              <div class="pc-invite" id="pc-invite-wrap" hidden>
+                <span>班级邀请码</span><b id="pc-invite">—</b>
+              </div>
+            </section>
+
+            <section class="pc-card">
+              <div class="pc-card-head">
+                <div>
+                  <p class="pc-kicker">TOOLS</p>
+                  <h2>班级工具</h2>
+                </div>
+              </div>
+              <nav class="pc-tools" aria-label="班级工具">
+                <a href="/daliy/#/list"><span>DDL 查询</span><span class="pc-tool-meta">作业、任务与考试</span></a>
+                <a href="/daliy/#/notifications"><span>通知</span><span class="pc-tool-meta" id="pc-unread">0 条未读</span></a>
+                <a href="/daliy/#/drafts" id="pc-drafts-link" hidden><span>待审核草稿</span><span class="pc-tool-meta" id="pc-drafts">0 份</span></a>
+                <a href="/daliy/#/ingest" id="pc-ingest-link" hidden><span>从消息导入</span><span class="pc-tool-meta">QQ 群内容</span></a>
+                <a href="/daliy/#/reports" id="pc-reports-link" hidden><span>完成报表</span><span class="pc-tool-meta">进度与名单</span></a>
+                <a href="/daliy/#/admin" id="pc-admin-link" hidden><span>班委后台</span><span class="pc-tool-meta">成员与邀请码</span></a>
+                <a href="/daliy/#/global" id="pc-global-link" hidden><span>管理后台</span><span class="pc-tool-meta">全部班级</span></a>
+              </nav>
+            </section>
+          </aside>
+        </div>
+
+        <section class="pc-card pc-security" aria-labelledby="pc-password-title">
+          <div class="pc-card-head">
+            <div>
+              <p class="pc-kicker">SECURITY</p>
+              <h2 id="pc-password-title">修改密码</h2>
+            </div>
+            <span class="pc-count">scrypt 加盐保存</span>
+          </div>
+          <form id="pc-password-form" novalidate>
+            <label class="pc-field">
+              <span>原密码</span>
+              <input id="pc-old-password" type="password" autocomplete="current-password" maxlength="64" required>
+            </label>
+            <label class="pc-field">
+              <span>新密码（至少 8 位）</span>
+              <input id="pc-new-password" type="password" autocomplete="new-password" minlength="8" maxlength="64" required>
+            </label>
+            <label class="pc-field">
+              <span>确认新密码</span>
+              <input id="pc-confirm-password" type="password" autocomplete="new-password" minlength="8" maxlength="64" required>
+            </label>
+            <p class="pc-error" id="pc-password-error" role="alert" hidden></p>
+            <p class="pc-success" id="pc-password-ok" role="status" hidden>密码已更新。</p>
+            <button class="pc-btn pc-btn-secondary" type="submit">保存新密码</button>
+          </form>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pc-footer">
+    <div class="pc-footer-inner">
+      <span>微电子学院 · 集成电路设计与集成系统26-1班</span>
+      <span>个人中心 <span aria-hidden="true">·</span> 与班级截止日共用账号</span>
+    </div>
+  </footer>
+
+  <noscript><p class="pc-noscript">个人中心需要 JavaScript 才能登录和读取账号信息。DDL 查询可直接访问。</p></noscript>
+  <script defer src="/assets/offline.js?v=20261112a"></script>
+  <script defer src="/assets/personalcenter.js?v=20261111f"></script>
+</body>
+</html>

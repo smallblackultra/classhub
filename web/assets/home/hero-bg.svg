@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="bgTitle bgDesc">
+  <title id="bgTitle">集成电路风格的深色抽象背景</title>
+  <desc id="bgDesc">深蓝底色、细密网格、电路走线与发光芯片轮廓，作为班级门户首屏背景。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b16"/>
+      <stop offset="0.55" stop-color="#0b1224"/>
+      <stop offset="1" stop-color="#111a35"/>
+    </linearGradient>
+    <radialGradient id="glowIndigo" cx="0.74" cy="0.23" r="0.62">
+      <stop offset="0" stop-color="#4f46e5" stop-opacity="0.5"/>
+      <stop offset="0.48" stop-color="#4338ca" stop-opacity="0.17"/>
+      <stop offset="1" stop-color="#4338ca" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowTeal" cx="0.58" cy="0.87" r="0.52">
+      <stop offset="0" stop-color="#0f766e" stop-opacity="0.36"/>
+      <stop offset="0.55" stop-color="#0f766e" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#0f766e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trace" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8" stop-opacity="0"/>
+      <stop offset="0.38" stop-color="#818cf8" stop-opacity="0.4"/>
+      <stop offset="0.76" stop-color="#99f6e4" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#99f6e4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chipFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#162044" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#080d1b" stop-opacity="0.98"/>
+    </linearGradient>
+    <radialGradient id="chipGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#9aa9df" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="0.9" fill="#c7d2fe" fill-opacity="0.12"/>
+    </pattern>
+    <filter id="blur18" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glowIndigo)"/>
+  <rect width="1600" height="900" fill="url(#glowTeal)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="720" width="880" height="900" fill="url(#dots)"/>
+
+  <g fill="none" stroke="#818cf8">
+    <circle cx="1230" cy="360" r="246" stroke-opacity="0.14"/>
+    <circle cx="1230" cy="360" r="342" stroke-opacity="0.08" stroke-dasharray="2 12"/>
+    <circle cx="1230" cy="360" r="448" stroke-opacity="0.05"/>
+    <circle cx="1230" cy="360" r="556" stroke-opacity="0.03" stroke-dasharray="1 18"/>
+  </g>
+
+  <g opacity="0.22" fill="none" stroke-linecap="round">
+    <path d="M760 0 1600 840" stroke="#6366f1" stroke-width="1"/>
+    <path d="M900 0 1600 700" stroke="#818cf8" stroke-width="1"/>
+    <path d="M640 0 1510 900" stroke="#312e81" stroke-width="2"/>
+  </g>
+
+  <g fill="none" stroke="url(#trace)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-40 640H248l70-70h264l70 70h250" opacity="0.72"/>
+    <path d="M-40 724H190l112-112h218l82 82h326" opacity="0.44"/>
+    <path d="M60 182h258l72 72h286l52-52h168" opacity="0.3"/>
+    <path d="M872 758h228l60-60h158l62 62h260" opacity="0.32"/>
+    <path d="M470 0v96l58 58h180" opacity="0.24"/>
+  </g>
+
+  <g fill="#99f6e4">
+    <circle cx="248" cy="640" r="3.2" fill-opacity="0.7"/>
+    <circle cx="512" cy="570" r="2.2" fill-opacity="0.45"/>
+    <circle cx="832" cy="640" r="2.6" fill-opacity="0.55"/>
+    <circle cx="1342" cy="758" r="2.8" fill-opacity="0.5"/>
+    <circle cx="250" cy="724" r="2" fill-opacity="0.35"/>
+  </g>
+  <g fill="#c7d2fe">
+    <circle cx="318" cy="182" r="2.4" fill-opacity="0.45"/>
+    <circle cx="676" cy="254" r="2" fill-opacity="0.32"/>
+    <circle cx="490" cy="154" r="2.2" fill-opacity="0.38"/>
+    <circle cx="1120" cy="758" r="2.2" fill-opacity="0.4"/>
+  </g>
+
+  <g transform="translate(1224 372) rotate(-16)">
+    <circle cx="0" cy="0" r="258" fill="url(#chipGlow)" filter="url(#blur18)" opacity="0.8"/>
+
+    <g fill="#c7d2fe" fill-opacity="0.24">
+      <rect x="-168" y="-210" width="14" height="22" rx="4"/>
+      <rect x="-100" y="-210" width="14" height="22" rx="4"/>
+      <rect x="-32" y="-210" width="14" height="22" rx="4"/>
+      <rect x="36" y="-210" width="14" height="22" rx="4"/>
+      <rect x="104" y="-210" width="14" height="22" rx="4"/>
+      <rect x="172" y="-210" width="14" height="22" rx="4"/>
+
+      <rect x="-168" y="188" width="14" height="22" rx="4"/>
+      <rect x="-100" y="188" width="14" height="22" rx="4"/>
+      <rect x="-32" y="188" width="14" height="22" rx="4"/>
+      <rect x="36" y="188" width="14" height="22" rx="4"/>
+      <rect x="104" y="188" width="14" height="22" rx="4"/>
+      <rect x="172" y="188" width="14" height="22" rx="4"/>
+
+      <rect x="-210" y="-168" width="22" height="14" rx="4"/>
+      <rect x="-210" y="-100" width="22" height="14" rx="4"/>
+      <rect x="-210" y="-32" width="22" height="14" rx="4"/>
+      <rect x="-210" y="36" width="22" height="14" rx="4"/>
+      <rect x="-210" y="104" width="22" height="14" rx="4"/>
+      <rect x="-210" y="172" width="22" height="14" rx="4"/>
+
+      <rect x="188" y="-168" width="22" height="14" rx="4"/>
+      <rect x="188" y="-100" width="22" height="14" rx="4"/>
+      <rect x="188" y="-32" width="22" height="14" rx="4"/>
+      <rect x="188" y="36" width="22" height="14" rx="4"/>
+      <rect x="188" y="104" width="22" height="14" rx="4"/>
+      <rect x="188" y="172" width="22" height="14" rx="4"/>
+    </g>
+
+    <rect x="-190" y="-190" width="380" height="380" rx="54" fill="url(#chipFace)" stroke="#a5b4fc" stroke-opacity="0.24" stroke-width="1.4"/>
+    <rect x="-150" y="-150" width="300" height="300" rx="38" fill="none" stroke="#818cf8" stroke-opacity="0.2"/>
+    <rect x="-132" y="-132" width="264" height="264" rx="30" fill="none" stroke="#a5b4fc" stroke-opacity="0.32" stroke-dasharray="3 9"/>
+    <rect x="-78" y="-78" width="156" height="156" rx="22" fill="#4f46e5" fill-opacity="0.13" stroke="#c7d2fe" stroke-opacity="0.36"/>
+
+    <g fill="none" stroke="#99f6e4" stroke-opacity="0.34" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-132-58h54l34-34h44"/>
+      <path d="M132 62h-48L52 30V-24"/>
+      <path d="M-62 132v-44l34-34h60"/>
+      <path d="M62-132v40L24-54h-52"/>
+      <path d="M-132 96h34l24 24h38"/>
+    </g>
+
+    <g fill="#99f6e4">
+      <circle cx="-78" cy="-92" r="3" fill-opacity="0.7"/>
+      <circle cx="52" cy="30" r="2.6" fill-opacity="0.55"/>
+      <circle cx="-62" cy="88" r="2.4" fill-opacity="0.5"/>
+      <circle cx="24" cy="-54" r="2.4" fill-opacity="0.45"/>
+    </g>
+    <g fill="#c7d2fe">
+      <circle cx="-132" cy="-58" r="2.2" fill-opacity="0.6"/>
+      <circle cx="132" cy="62" r="2.2" fill-opacity="0.5"/>
+      <circle cx="62" cy="-132" r="2" fill-opacity="0.45"/>
+      <circle cx="-132" cy="96" r="2" fill-opacity="0.35"/>
+    </g>
+
+    <circle cx="0" cy="0" r="10" fill="#c7d2fe" fill-opacity="0.5" filter="url(#glow)"/>
+  </g>
+
+  <g opacity="0.6">
+    <path d="M1012 92c42 0 76 34 76 76" fill="none" stroke="#99f6e4" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="2 7"/>
+    <path d="M1460 684c-48 0-86-38-86-86" fill="none" stroke="#818cf8" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="2 7"/>
+    <circle cx="1012" cy="92" r="3" fill="#99f6e4" fill-opacity="0.4"/>
+    <circle cx="1460" cy="684" r="2.6" fill="#818cf8" fill-opacity="0.35"/>
+  </g>
+</svg>

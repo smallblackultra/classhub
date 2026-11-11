@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4b151d">
+  <meta name="description" content="微电子学院 · 集成电路设计与集成系统26-1班班级门户：DDL 查询、新闻资讯、班级活动、精彩瞬间、课程信息与归寝登记。">
+  <title>微电子学院 · 集成电路设计与集成系统26-1班</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="application-name" content="班级门户">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="班级门户">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" href="assets/home/favicon.png" type="image/png">
+  <link rel="preload" as="image" href="assets/home/campus.jpg?v=20261111f">
+  <link rel="stylesheet" href="assets/home.css?v=20261111f">
+</head>
+<body class="portal-body">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <div class="header-inner shell">
+      <a class="brand" href="#/" aria-label="微电子学院班级门户首页">
+        <span class="brand-mark"><img src="assets/home/logo.png" alt="合肥工业大学微电子学院院徽"></span>
+        <span class="brand-copy">
+          <img class="brand-logo" src="assets/home/brand.png" alt="合肥工业大学国家示范性微电子学院">
+          <span class="brand-sub">集成电路设计与集成系统26-1班</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a class="nav-link" href="#/" data-route="home" aria-current="page">首页</a>
+        <a class="nav-link" href="#/moments" data-route="moments">精彩瞬间</a>
+        <a class="nav-link" href="#/courses" data-route="courses">课程信息</a>
+      </nav>
+
+      <div class="user-area" data-auth-state="guest">
+        <a class="profile-link" id="profile-link" href="/personalcenter/">个人中心</a>
+        <span class="user-chip" id="user-chip" aria-label="当前访客身份">
+          <span class="user-name" id="user-name">访客</span>
+          <span class="avatar" id="user-avatar" aria-hidden="true">访</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="view view-home" data-view="home" aria-labelledby="hero-title">
+      <section class="hero" aria-label="班级门户介绍">
+        <div class="hero-inner shell">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>微电子学院 · 班级门户</p>
+            <h1 id="hero-title" class="hero-slogan"><span>厚德 · 笃行</span><span>崇实 · 尚新</span></h1>
+          </div>
+
+          <aside class="news-panel" id="news-panel" aria-labelledby="news-title" data-news-state="loading">
+            <header class="news-head">
+              <h2 id="news-title">新闻资讯</h2>
+              <a class="news-head-link" href="https://wdzxy.hfut.edu.cn/" target="_blank" rel="noopener noreferrer">学院官网 <span aria-hidden="true">↗</span></a>
+            </header>
+            <div class="news-grid">
+              <section class="news-column" aria-labelledby="notice-title">
+                <div class="news-column-head">
+                  <h3 id="notice-title">通知公告</h3>
+                  <a class="news-column-more" href="https://wdzxy.hfut.edu.cn/5630/list.htm" target="_blank" rel="noopener noreferrer">全部 <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="news-list" data-news-column="notice" aria-live="polite">
+                  <p class="news-loading">正在读取学院官网…</p>
+                </div>
+              </section>
+              <span class="news-divider" aria-hidden="true"></span>
+              <section class="news-column" aria-labelledby="news-column-title">
+                <div class="news-column-head">
+                  <h3 id="news-column-title">我院新闻</h3>
+                  <a class="news-column-more" href="https://wdzxy.hfut.edu.cn/5628/list.htm" target="_blank" rel="noopener noreferrer">全部 <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="news-list" data-news-column="news" aria-live="polite">
+                  <p class="news-loading">正在读取学院官网…</p>
+                </div>
+              </section>
+            </div>
+            <div class="news-foot">
+              <span data-news-updated>等待学院官网同步</span>
+              <a class="news-source" href="https://wdzxy.hfut.edu.cn/" target="_blank" rel="noopener noreferrer">访问官网 <span aria-hidden="true">↗</span></a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="services shell" aria-labelledby="services-title">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">QUICK ACCESS</p>
+            <h2 id="services-title">班级服务</h2>
+          </div>
+          <p class="section-note">从最常用的事情开始。</p>
+        </div>
+
+        <div class="service-grid">
+          <a class="service-card" href="https://dorm-check.hfut.ycr10.cn/quick.html" target="_blank" rel="noopener noreferrer" data-module="dorm">
+            <div class="service-top">
+              <span class="service-icon icon-slot" data-icon="dorm" aria-hidden="true"><span class="icon-glyph">寝</span></span>
+            </div>
+            <div class="service-body">
+              <h3>归寝登记</h3>
+              <p>每晚归寝打卡、请假与晚归记录，班委可查看汇总。</p>
+            </div>
+            <span class="service-link">前往登记 <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="service-card service-card--primary" href="/daliy/" data-module="ddl">
+            <div class="service-top">
+              <span class="service-icon icon-slot" data-icon="ddl" aria-hidden="true"><span class="icon-glyph">DDL</span></span>
+            </div>
+            <div class="service-body">
+              <h3>DDL 查询</h3>
+              <p>作业、任务、考试与截止时间，一处看清，不再错过。</p>
+            </div>
+            <span class="service-link">进入班级截止日 <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="service-card" href="#/signup" data-module="signup">
+            <div class="service-top">
+              <span class="service-icon icon-slot" data-icon="signup" aria-hidden="true"><span class="icon-glyph">活</span></span>
+            </div>
+            <div class="service-body">
+              <h3>活动报名</h3>
+              <p>班会、团日活动与班级聚会，在线报名、名额与签到。</p>
+            </div>
+            <span class="service-link">了解模块 <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section class="view view-placeholder shell" data-view="placeholder" hidden aria-labelledby="placeholder-title">
+      <nav class="breadcrumb" aria-label="面包屑">
+        <a href="#/">首页</a><span aria-hidden="true">/</span><span data-placeholder-crumb>班级服务</span>
+      </nav>
+      <div class="placeholder-grid">
+        <div class="placeholder-main">
+          <span class="placeholder-icon icon-slot" data-icon="activities" data-placeholder-icon aria-hidden="true"><span class="icon-glyph">旗</span></span>
+          <p class="section-kicker" data-placeholder-kicker>班级服务 · 筹备中</p>
+          <h1 id="placeholder-title" tabindex="-1" data-placeholder-title>班级活动</h1>
+          <p class="placeholder-summary" data-placeholder-summary>把班会、团日活动和班级聚会放在同一个地方。</p>
+          <div class="placeholder-status"><span class="status-dot" aria-hidden="true"></span><span data-placeholder-status>页面已就位 · 功能筹备中</span></div>
+          <div class="placeholder-actions">
+            <a class="btn btn-primary" href="#/">返回首页</a>
+          </div>
+        </div>
+        <aside class="planned-panel" aria-labelledby="planned-title">
+          <p class="panel-kicker">PLANNED</p>
+          <h2 id="planned-title">计划中的能力</h2>
+          <ul class="planned-list" data-placeholder-list></ul>
+          <p class="planned-note" data-placeholder-note>功能与数据接口将在后续版本接入。</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner shell">
+      <figure class="quote-card">
+        <span class="quote-mark quote-mark--open" aria-hidden="true">“</span>
+        <span class="quote-mark quote-mark--close" aria-hidden="true">”</span>
+        <blockquote id="quote-text">博学之，审问之，慎思之，明辨之，笃行之。</blockquote>
+        <figcaption id="quote-author">《礼记 · 中庸》</figcaption>
+      </figure>
+      <div class="date-card" aria-label="今天的日期">
+        <p class="date-label">TODAY · 今天</p>
+        <div class="date-main">
+          <span class="date-day" id="date-day">—</span>
+          <div class="date-meta">
+            <span id="date-month-year">—</span>
+            <span id="date-weekday">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom shell">
+      <p>微电子学院 · 集成电路设计与集成系统26-1班</p>
+      <p>班级门户 <span aria-hidden="true">·</span> 背景图：合肥工业大学校园实景</p>
+    </div>
+  </footer>
+
+  <noscript><p class="noscript">首页内容可正常阅读；实时日期与个人状态需要 JavaScript。DDL 查询可直接访问。</p></noscript>
+  <script defer src="assets/offline.js?v=20261112a"></script>
+  <script defer src="assets/home-data.js?v=20261111f"></script>
+  <script defer src="assets/home.js?v=20261111f"></script>
+</body>
+</html>
+

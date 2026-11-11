@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="微电子学院班级门户">
+  <defs>
+    <linearGradient id="fav" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="0.58" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#fav)"/>
+  <rect x="18" y="18" width="28" height="28" rx="6" fill="none" stroke="#e0e7ff" stroke-width="2"/>
+  <rect x="25" y="25" width="14" height="14" rx="3" fill="#99f6e4" fill-opacity="0.9"/>
+  <g stroke="#c7d2fe" stroke-width="2" stroke-linecap="round">
+    <path d="M24 18v-5M32 18v-5M40 18v-5M24 46v5M32 46v5M40 46v5"/>
+    <path d="M18 24h-5M18 32h-5M18 40h-5M46 24h5M46 32h5M46 40h5"/>
+  </g>
+</svg>

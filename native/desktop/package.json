@@ -1,0 +1,63 @@
+{
+  "name": "classhub-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "微电子学院班级门户桌面版",
+  "main": "main.js",
+  "author": "微电子学院 集成电路设计与集成系统26-1班",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron",
+      "electron-builder"
+    ]
+  },
+  "build": {
+    "appId": "com.hfut.classhub.desktop",
+    "productName": "微电子学院班级门户",
+    "electronDist": "node_modules/electron/dist",
+    "copyright": "Copyright © 2026 微电子学院 集成电路设计与集成系统26-1班",
+    "directories": {
+      "output": "../../release",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "package.json",
+      "build/icon.ico"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false,
+      "artifactName": "ClassHub-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "班级门户",
+      "language": "2052",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico"
+    }
+  }
+}
